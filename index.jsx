@@ -1,22 +1,40 @@
 import { createRoot } from "react-dom/client";
 import React from "react";
+import Header from "./Header";
 
 const root = createRoot(document.getElementById("root"))
 
 root.render(
-    <TempName />)
+    <Page />)
 
-function TempName() {
+
+
+function MainComponent() {
     return (
-        <main>
-        <img src="react-logo.svg" />
-        <h1>Fun Facts About React!!!</h1>
-        <ul>
-            <li>First Release in 2013</li>
-            <li>Was Originally created by Jordan Walke</li>
-            <li>It's maintainded by META</li>
-            <li>Powers thousands of Enterprise Apps including mobile Apps</li>
-        </ul>
-    </main> 
+        <>
+        <h1>Reasons to love REACT!</h1>
+                <ol>
+                <li>FI Love React</li>
+                <li>Really Love it</li>
+                </ol>
+        </>
+    )
+}
+
+function FooterComponent() {
+    return (
+        <footer>
+        <small>@Jaime 2025 All Rights Reserved</small>
+        </footer>
+    )
+}
+
+function Page() {
+    return (
+        <>
+            <Header />
+            <MainComponent />
+            <FooterComponent />            
+        </> 
     )
 }
