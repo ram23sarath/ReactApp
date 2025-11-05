@@ -1,11 +1,15 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-// Quick runtime check
-console.log("index.jsx loaded");
+function MainContent() {
+    return ( <h1>My First Function</h1>)
+}
+const container = document.getElementById("root");
+// createRoot returns a root you can call `.render()` on
+const root = createRoot(container);
 
-createRoot(document.querySelector("#root")).render(<ul>
-    <li>Jaime 1</li>
-    <li>Jaime 2</li>
-    <li>Jaime 3</li>
-    </ul>);
+root.render(
+    <div>
+        <MainContent />
+    </div>
+);
