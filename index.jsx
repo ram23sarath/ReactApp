@@ -13,6 +13,5 @@ root.render(
             <li>It's maintainded by META</li>
             <li>Powers thousands of Enterprise Apps including mobile Apps</li>
         </ul>
-    </main>
-    
+    </main> 
 )
